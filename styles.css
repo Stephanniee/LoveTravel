@@ -27,7 +27,8 @@ width: 100%;
 left: 0;
 padding: 0 1rem;
 box-shadow: 0 2px 2px #3a3a3a;
-display: none;}
+display: none;
+top: 100%}
 
 header {
   z-index: 99;
@@ -37,6 +38,7 @@ header {
 header a {text-decoration: none;
 color:inherit;}
 
+/*navbar Styles*/
 .navbar a {
     font-size: 16px;
     color: rgb(14, 13, 13);
@@ -86,7 +88,10 @@ color:inherit;}
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
+/*nav toggle*/
+#nav-toggle:checked~nav { display: block;}
+#nav-toggle {display: none;}
+.nav-toggle-lable {font-size: 2rem;}
 
 
 
@@ -97,6 +102,7 @@ main {
     /*This pushes the footer down*/
     flex: 1 0 auto;
     background-color: #fbf6f3;
+    margin-top: 47px;
 }
 /**/
 /**/
