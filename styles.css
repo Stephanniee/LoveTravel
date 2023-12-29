@@ -12,11 +12,11 @@ box-sizing: border-box;}
 
 /* styling the title*/
 #logo {
-font-size:40px;
+font-size: 32px;
 font-family: Lucida Handwriting;
 margin-top: 50px;
 color: black;
-letter-spacing: 7px;
+letter-spacing: 3px;
 line-height: 1.5;
 }
 /*Header Styles*/
@@ -33,6 +33,9 @@ top: 100%}
 header {
   z-index: 99;
   align-self: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
   }
 
 header a {text-decoration: none;
@@ -91,7 +94,8 @@ color:inherit;}
 /*nav toggle*/
 #nav-toggle:checked~nav { display: block;}
 #nav-toggle {display: none;}
-.nav-toggle-lable {font-size: 2rem;}
+.nav-toggle-lable {font-size: 2rem;
+  margin-left:20px; }
 
 
 
