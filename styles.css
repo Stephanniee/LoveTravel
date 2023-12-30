@@ -266,7 +266,7 @@ max-height: 300px;
 
   #begining-image{ order: 0;}
 
-  #second-step [order: 1;]
+  #second-step {order: 1;}
 
   #frist-step > div { align-self: flex-start;}
 
