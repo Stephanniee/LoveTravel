@@ -4,11 +4,15 @@ body {
     display: flex;
     flex-direction: column;
   font-family: lato,sans-serif;}
+
  /* Rest Styles*/
  *{
   padding:0;
 margin: 0;
 box-sizing: border-box;}
+
+/* text styling*/
+
 
 /* styling the title*/
 #logo {
@@ -103,7 +107,20 @@ main {
   height: 600px;
   width: 100%;
   background: url("assets/images/ClearwaterBeach-59cd9d74685fbe0011577afd.jpg") no-repeat center center/cover;
+  position: absolute;
 }
+#cover-text {
+ font-size: 130%;
+ position: absolute;
+ top: 30px;
+ min-height: 200px;
+ padding-top: 4px;
+ padding-left: 10px;
+}
+#cover-text > h2, #cover-text > h3 {
+  color: #73736f;
+}
+
 
 /*Footer*/
 #social-networks {
@@ -163,7 +180,10 @@ nav {
   left:10%
 
 }
-
+#cover-text {
+  width: 300px;
+  left:50px;
+}
 }
   
 /* Media query: laptops and desktops (992px and up)*/
