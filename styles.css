@@ -210,7 +210,25 @@ max-height: 300px;
  
   #second-step > div{text-align: end;
     align-self: flex-end;}
+/*cities*/
+#cities {
+  background: local;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+#location div{
+  color: #afafaf;
+  background-color: rgba(0,0,0,0.6);
+  padding: 15px;
+  text-align: center;
+  /*makes the div expand to fit available space on its row*/
+  flex-grow: 1 ;
+  flex-basis: 200px ;
+}
+#location h3{
+  color: #afafaf;
+}
 
 
 
