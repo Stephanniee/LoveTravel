@@ -185,7 +185,36 @@ nav {
   left:50px;
 }
 }
-  
+  /*main section 2 with text */
+  #circle-cover-bg {
+background: fixed;
+height: 90vw ;
+width: 90vw;
+margin-bottom:20px ;
+border: 50%;
+max-width: 300px;
+max-height: 300px; 
+}
+#begining-image {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  #first-step,
+  #second-step {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+ 
+  #second-step > div{text-align: end;
+    align-self: flex-end;}
+
+
+
+
+
 /* Media query: laptops and desktops (992px and up)*/
 @media screen and (min-width: 992px) {
   nav {
@@ -212,7 +241,18 @@ nav {
     line-height: 75px;
     margin-left:-300px;
 
-  
   }
+  #beginning { display: flex;
+  flex-direction: row;}
+  #beginning > div {flex: 1;}
+
+  #begining-image{ order: 0;}
+
+  #second-step [order: 1;]
+
+  #frist-step > div { align-self: flex-start;}
+
+  #second-step > div{ align-self: flex-end;}
+
   
   }
