@@ -6,13 +6,10 @@ body {
   font-family: lato,sans-serif;}
 
  /* Rest Styles*/
- *{
+ * {
   padding:0;
 margin: 0;
 box-sizing: border-box;}
-
-/* text styling*/
-
 
 /* styling the title*/
 #logo {
@@ -23,6 +20,7 @@ color: black;
 letter-spacing: 3px;
 line-height: 1.5;
 }
+
 /*Header Styles*/
 nav {
 position:absolute;
@@ -62,7 +60,6 @@ color:inherit;}
 
   }
 
-   
 .nav .dropdown:hover a:hover {
   background-color: #ca9999;
 }
@@ -85,14 +82,21 @@ color:inherit;}
     text-align:center;
     display: block;
   }
+
   .dropdown:hover .dropdown-content {
     display: block;
   }
   
 /*nav toggle*/
-#nav-toggle:checked~nav { display: block;}
-#nav-toggle {display: none;}
-.nav-toggle-lable {font-size: 2rem;
+
+#nav-toggle:checked~nav { 
+  display: block;}
+
+#nav-toggle {
+  display: none;}
+
+.nav-toggle-lable {
+  font-size: 2rem;
   margin-left:20px; }
 
 /*Main content*/
@@ -107,8 +111,11 @@ main {
   height: 600px;
   width: 100%;
   background: url("assets/images/ClearwaterBeach-59cd9d74685fbe0011577afd.jpg") no-repeat center center/cover;
-  position: absolute;
+  position: relative;
 }
+
+/*cover text*/
+
 #cover-text {
   position: absolute;
   top: 30px;
@@ -129,6 +136,31 @@ main {
   font-size: 100%;
 }
 
+#beginning p {
+  padding: 0 20px;
+} 
+
+#beginning hr {
+  border-top: 1px solid #3a3a3a ;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+#circle-cover-bg {
+  background: url("assets/images/Computer-Desktop-Wallpapers-chicago-usa-city-street-skyscrape-1920x1200.jpg") no-repeat top center/cover;
+  height: 90vw ;
+  width: 90vw;
+  margin-bottom:20px ;
+  border: 50%;
+  max-width: 300px;
+  max-height: 300px; 
+  }
+
+  #begining-image {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 /*Footer*/
 #social-networks {
@@ -143,6 +175,25 @@ main {
   padding: 5%;
   color: #3a3a3a;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**/
 /**/
 /**/
@@ -161,6 +212,13 @@ main {
 /**/
 /**/
 /**/
+
+/* Media query: laptops and desktops (576px and up)*/
+@media screen and (min-width: 576px) {
+  #photos{column-count:2;
+  column-gap:0 ;}
+}
+
 /* Media query: tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
 nav {
@@ -174,8 +232,10 @@ nav {
   left: 5%;
 }
 
-#menu {display: flex;}
-#menu > li {padding-left: 1rem; }
+#menu {
+  display: flex;}
+#menu > li {
+  padding-left: 1rem; }
 
 .nav-toggle-lable {
   display: none ;
@@ -188,39 +248,151 @@ nav {
   left:10%
 
 }
+
+/*main content*/
+main {
+  margin-top: 79%;
+}
+
+/*hero*/
+
 #cover-text {
   width: 600px;
   left:50px;
   font-size: 150%;
+} 
+ /*Beginnig Section*/
+
+#first-step, #second-step {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-
-
-  /*main section 2 with text */
-  #circle-cover-bg {
-background: fixed;
-height: 90vw ;
-width: 90vw;
-margin-bottom:20px ;
-border: 50%;
-max-width: 300px;
-max-height: 300px; 
-}
-#begining-image {
-  display:flex;
-  align-items: center;
-  justify-content: center;
+#first-step > div,
+#second-step > div {
+  width: 75%;
 }
 
-  #first-step,
-  #second-step {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+#second-step > div{
+  text-align: end;
+  align-self: flex-end;}
+
+
+}
+
+/* Media query: laptops and desktops (992px and up)*/
+
+@media screen and (min-width: 992px) {
+  nav {
+    display: block;
+    box-shadow: none;
+    padding-right: 1rem ;
+    Top: 40px; 
+    Display: Fixed;
+    left: 55%;
+    position: relative;
+    width: fit-content;
   }
- 
-  #second-step > div{text-align: end;
+  
+  #menu {display: flex;}
+  #menu a:hover {border-bottom: 1px solid #ca9999 ;}
+  #menu > li {padding-left: 1rem; }
+  
+  .nav-toggle-lable {
+    display: none ;
+  }
+  
+  #logo {
+    font-size: 280%;
+    line-height: 75px;
+    margin-left:-300px;
+
+  }
+}
+
+/* Media query: laptops and desktops (12oopx)*/
+
+@media screen and (min-width: 1200px) {
+ /* beginning section*/
+ #beginning { 
+  display: flex;
+  flex-direction: row;}
+
+  #beginning > div {
+    flex: 1;}
+
+  #beginning-image{ 
+    order: 0;}
+
+  #second-step {
+    order: 1;}
+
+  #frist-step > div { 
+    align-self: flex-start;}
+
+  #second-step > div{ 
     align-self: flex-end;}
+
+  #photos{
+    column-count: 4; }
+
+}
+
+
+
+
+
+  
+  
+
+  /* Form */
+  #signup {
+      background-position: center;
+      position: relative;
+  }
+
+  #signup-form {
+      max-width: 400px;
+      position: absolute;
+      left: 10%;
+      top: 150px;
+  }
+
+  .text-input:hover {
+      border-color: #f16c6b;
+  }
+
+  .join-button:hover {
+      background-color: #fafafa;
+      color: #454b1b;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*cities*/
 #cities {
   background: local;
@@ -300,97 +472,3 @@ max-height: 300px;
   color: #fafafa;
 }
 
-
-
-/* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
-
-  /* Form */
-  #signup {
-      background-position: center;
-      position: relative;
-  }
-
-  #signup-form {
-      max-width: 400px;
-      position: absolute;
-      left: 10%;
-      top: 150px;
-  }
-
-  .text-input:hover {
-      border-color: #f16c6b;
-  }
-
-  .join-button:hover {
-      background-color: #fafafa;
-      color: #454b1b;
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Media query: laptops and desktops (576px and up)*/
-@media screen and (min-width: 576px) {
-  #photos{column-count:2;
-  column-gap:0 ;}
-}
-
-/* Media query: laptops and desktops (992px and up)*/
-@media screen and (min-width: 992px) {
-  nav {
-    display: block;
-    box-shadow: none;
-    padding-right: 1rem ;
-    Top: 40px; 
-    Display: Fixed;
-    left: 55%;
-    position: relative;
-    width: fit-content;
-  }
-  
-  #menu {display: flex;}
-  #menu a:hover {border-bottom: 1px solid #ca9999 ;}
-  #menu > li {padding-left: 1rem; }
-  
-  .nav-toggle-lable {
-    display: none ;
-  }
-  
-  #logo {
-    font-size: 280%;
-    line-height: 75px;
-    margin-left:-300px;
-
-  }
-
-  #beginning { display: flex;
-  flex-direction: row;}
-  #beginning > div {flex: 1;}
-
-  #begining-image{ order: 0;}
-
-  #second-step {order: 1;}
-
-  #frist-step > div { align-self: flex-start;}
-
-  #second-step > div{ align-self: flex-end;}
-
- #photos{column-count:4; }
-}
