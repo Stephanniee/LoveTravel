@@ -110,18 +110,18 @@ main {
   position: absolute;
 }
 #cover-text {
- font-size: 130%;
- position: absolute;
- top: 30px;
- min-height: 200px;
- padding-top: 4px;
- padding-left: 10px;
+  position: absolute;
+  top: 30px;
+  min-height: 200px;
+  padding-top: 4px;
+  padding-left: 10px;
 }
+
 #cover-text > h2 {
   color: #f1f1ee;
   font-family: Lucida Handwriting , sans-serif;
   letter-spacing: 4px;
-  font-size: 100%;
+  font-size: 140%;
 }
 
 #cover-text > h3 {
@@ -189,10 +189,13 @@ nav {
 
 }
 #cover-text {
-  width: 300px;
+  width: 600px;
   left:50px;
+  font-size: 150%;
 }
-}
+
+
+
   /*main section 2 with text */
   #circle-cover-bg {
 background: fixed;
@@ -297,6 +300,8 @@ max-height: 300px;
   color: #fafafa;
 }
 
+
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
@@ -387,7 +392,5 @@ max-height: 300px;
 
   #second-step > div{ align-self: flex-end;}
 
- #photos{column-count:4;
-  }
-  
-  }
+ #photos{column-count:4; }
+}
