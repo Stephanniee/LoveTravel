@@ -58,33 +58,53 @@ header a {
   letter-spacing: 4px;
   margin-left: 60px;
   padding: 2rem;
-  }
+  margin: 0;
+}
 
-#menu > li {
+#menu>li {
   margin-bottom: 1rem;
   font-size: 16px;
   color: rgb(14, 13, 13);
-  text-decoration: none;}
-
-#menu > li:hover {
-  color: #ca9999; 
+  text-decoration: none;
+  margin-right: 15px;
+  position: relative;
 }
-.dropdown:hover{
-  color: #ca9999; 
+
+#menu>li:hover {
+  color: #ca9999;
+}
+
+.dropdown:hover {
+  color: #ca9999;
 }
 
 .nav .dropdown:hover a:hover {
   background-color: #ca9999;
 }
 
+.dropdown {
+  position: relative;
+  margin-left: 15px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
 .dropdown-content {
   display: none;
-  position: fixed;
+  position: absolute;
   color: #73736f;
   background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 10px 10px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  top: 100%;
+  left: 0;
 
 }
 
@@ -137,6 +157,7 @@ main {
   background: url("assets/images/ClearwaterBeach-59cd9d74685fbe0011577afd.jpg") no-repeat center center/cover;
   position: relative;
   z-index: 1;
+  margin-bottom: 5%;
 }
 
 /*cover text*/
@@ -172,7 +193,7 @@ main {
 }
 
 #circle-cover-bg {
-  background: url("assets/images/Computer-Desktop-Wallpapers-chicago-usa-city-street-skyscrape-1920x1200.jpg") no-repeat top center/cover;
+  background: url("assets/images/R.jpg") no-repeat top center/cover;
   height: 90vh;
   width: 90vw;
   margin-bottom: 20px;
@@ -187,6 +208,81 @@ main {
   align-items: center;
   justify-content: center;
 }
+
+#About-travel h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Lucida Handwriting, sans-serif;
+}
+
+#first-step h3 {
+  font-family: Lucida Handwriting, sans-serif;
+}
+
+#second-step h3 {
+  font-family: Lucida Handwriting, sans-serif;
+}
+
+#first-step h3 i {
+  margin-left: 10px;
+}
+
+#second-step h3 i {
+  margin-left: 10px;
+}
+
+/*cities*/
+#cities {
+  background: url("assets/images/Computer-Desktop-Wallpapers-chicago-usa-city-street-skyscrape-1920x1200.jpg") no-repeat top center/cover;
+  display:flex;
+  flex-wrap: wrap;
+  min-height: 100vh; 
+  margin-top: 5%;
+  background-size: cover; 
+}
+#location {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px; /* Adjust as needed */
+}
+#location div {
+  color: #fafafa;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  text-align: center;
+  /*makes the div expand to fit available space on its row*/
+  flex: 1;
+  border: 2px solid white;
+}
+
+#location h3 {
+  color: #fafafa;
+  margin-bottom: 10px; 
+  justify-content: center;
+  align-items: center;
+}
+
+/*main section for gallery*/
+#photos img {
+  width: 100%;
+  line-height: 1rem;
+
+}
+
+#photos {
+  /*fixes the white space inbetween pictures*/
+  line-height: 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*Footer*/
 #social-networks {
@@ -259,11 +355,6 @@ main {
     left: 10%
   }
 
-  /*main content*/
-  main {
-    margin-top: 79%;
-  }
-
   /*hero*/
 
   #cover-text {
@@ -297,6 +388,9 @@ main {
 /* Media query: laptops and desktops (992px and up)*/
 
 @media screen and (min-width: 992px) {
+  
+
+  
   nav {
     display: block;
     box-shadow: none;
@@ -318,6 +412,12 @@ main {
 
   #menu>li {
     padding-left: 1rem;
+  }
+
+
+  #dropdown {
+    margin-left: 15px;
+    margin-right: -15px;
   }
 
   .nav-toggle-lable {
@@ -375,27 +475,6 @@ main {
 
 
 
-/* Form */
-#signup {
-  background-position: center;
-  position: relative;
-}
-
-#signup-form {
-  max-width: 400px;
-  position: absolute;
-  left: 10%;
-  top: 150px;
-}
-
-.text-input:hover {
-  border-color: #f16c6b;
-}
-
-.join-button:hover {
-  background-color: #fafafa;
-  color: #454b1b;
-}
 
 
 
@@ -407,53 +486,6 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*cities*/
-#cities {
-  background: local;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#location div {
-  color: #afafaf;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 15px;
-  text-align: center;
-  /*makes the div expand to fit available space on its row*/
-  flex-grow: 1;
-  flex-basis: 200px;
-}
-
-#location h3 {
-  color: #afafaf;
-}
-
-/*main section for gallery*/
-#photos img {
-  width: 100%;
-  line-height: 1rem;
-
-}
-
-#photos {
-  /*fixes the white space inbetween pictures*/
-  line-height: 0;
-}
 
 
 /*Footer*/
