@@ -92,10 +92,10 @@ color:inherit;}
 #nav-toggle:checked~nav { 
   display: block;}
 
-#nav-toggle {
-  display: none;}
+  #nav-toggle {
+    display: none;}
 
-.nav-toggle-lable {
+.nav-toggle-label {
   font-size: 2rem;
   margin-left:20px; }
 
@@ -111,8 +111,7 @@ main {
   height: 600px;
   width: 100%;
   background: url("assets/images/ClearwaterBeach-59cd9d74685fbe0011577afd.jpg") no-repeat center center/cover;
-  position: relative;
-}
+  position:relative;}
 
 /*cover text*/
 
